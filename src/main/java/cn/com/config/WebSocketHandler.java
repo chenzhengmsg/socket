@@ -1,13 +1,15 @@
 package cn.com.config;
 
+import org.springframework.stereotype.Component;
 import org.springframework.web.socket.*;
 import org.springframework.web.socket.handler.AbstractWebSocketHandler;
 
+import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-
+@Component
 public class WebSocketHandler extends AbstractWebSocketHandler {
 
     /**
